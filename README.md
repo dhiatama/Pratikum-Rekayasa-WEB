@@ -9,6 +9,6 @@
 
 ## PRATIKUM REKAYASA WEB - LARAVEL
 
-Nama    : Wiradhiatama Mochammad Falih
-NIM     : G.231.20.0104
-Kelas   : A1 <Sore>
+<b>Nama    : Wiradhiatama Mochammad Falih</b><br>
+<b>NIM     : G.231.20.0104</b><br>
+<b>Kelas   : A1 <Sore></b><br>
