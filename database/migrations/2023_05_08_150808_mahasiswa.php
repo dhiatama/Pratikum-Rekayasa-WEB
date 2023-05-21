@@ -6,29 +6,25 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create('mahasiswa', function(Blueprint $table){
-            $table->id();
-            $table->string('nim',15);
-            $table->string('nama', 50);
-            $table->string('alamat');
-            $table->timestamps();
-        })
-    }
+/**
+* Run the migrations.
+*/
+public function up(): void
+{
+Schema::create('mahasiswa', function (Blueprint $table) {
+$table->string('nim')->primary();
+$table->string('nama');
+$table->string('alamat');
+$table->string('jurusan');
+$table->timestamps();
+});
+}
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        //
-    }
+/**
+* Reverse the migrations.
+*/
+public function down(): void
+{
+Schema::drop('mahasiswa');
+}
 };
