@@ -51,8 +51,8 @@ class MahasiswaController extends Controller
         $model->umur=$req->umur;
         $model->alamat=$req->alamat;
         $model->kota=$req->kota;
-        $model->kelas=$kelas->kelas;
-        $model->jurusan=$jurusan->jurusan;
+        $model->kelas=$req->kelas;
+        $model->jurusan=$req->jurusan;
         if($model->save()) {
                 $success=true;
                 $message="Data berhasil disimpan";
@@ -64,7 +64,7 @@ class MahasiswaController extends Controller
 
         $balikan = [
             "success"=>$success,
-            "message"=>$mesage,
+            "message"=>$message,
             "data"=>@$req->all()
         ];
         return response()->json($balikan);
