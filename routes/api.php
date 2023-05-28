@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductController;
+use App\Http\Controllers\MahasiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +19,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/product',[ProductController::class,'index']);
+Route::get('/index',[MahasiswaController::class,'index']);
+
+Route::get('/read',[MahasiswaController::class,'read']);
+Route::post('/create',[MahasiswaController::class,'create']);
 

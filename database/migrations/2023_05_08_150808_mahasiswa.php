@@ -14,7 +14,10 @@ public function up(): void
 Schema::create('mahasiswa', function (Blueprint $table) {
 $table->string('nim')->primary();
 $table->string('nama');
+$table->integer('umur');
 $table->string('alamat');
+$table->string('kota');
+$table->string('kelas');
 $table->string('jurusan');
 $table->timestamps();
 });
