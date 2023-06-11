@@ -23,4 +23,6 @@ Route::get('/index',[MahasiswaController::class,'index']);
 
 Route::get('/read',[MahasiswaController::class,'read']);
 Route::post('/create',[MahasiswaController::class,'create']);
+Route::put('/mahasiswa/{nim}', [MahasiswaController::class, 'update']);
+Route::delete('/mahasiswa/{nim}', [MahasiswaController::class, 'destroy']);
 
