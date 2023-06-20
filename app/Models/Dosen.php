@@ -12,4 +12,5 @@ class Dosen extends Model
     protected $primaryKey = "nidn";
     public $incrementing=false;
     protected $keyType="string";
+    protected $fillable = ['nidn', 'nama', 'alamat','jurusan'];
 }
